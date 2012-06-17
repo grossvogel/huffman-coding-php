@@ -72,7 +72,7 @@ class HuffmanCoding
 	/**
 	 * 	decode the data using the code tree
 	 */
-	public function decode ($data)
+	public static function decode ($data)
 	{
 		$rootNode = HuffmanNode::loadFromString ($data);
 		$currentNode = $rootNode;
