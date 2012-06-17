@@ -1,0 +1,3 @@
+[submodule "bit-util-php"]
+	path = bit-util-php
+	url = git@github.com:grossvogel/bit-util-php.git
