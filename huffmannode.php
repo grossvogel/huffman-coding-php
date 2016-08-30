@@ -27,7 +27,6 @@ class HuffmanNode
 		$newParent = new HuffmanNode (null, $left->getWeight () + $right->getWeight ());
 		$newParent->leftChild = $left;
 		$newParent->rightChild = $right;
-		$leftChild->parent = $rightChild->parent = $newParent;
 		return $newParent;
 	}
 	
@@ -92,7 +91,6 @@ class HuffmanNode
 				$parent = new HuffmanNode (null);
 				$parent->leftChild = $left;
 				$parent->rightChild = $right;
-				$leftChild->parent = $rightChild->parent = $parent;
 				return $parent;
 				break;
 			case '1':
